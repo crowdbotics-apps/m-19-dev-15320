@@ -23,11 +23,21 @@ export default class Blank extends React.Component {
     }
   }
 
-  state = {}
+  state = {
+    TextInput_3:
+      "jhgjhgjhgjhgjgjjhgjhjhjgjhgjhghg jhgjhghjg jhgjhghj jhgjhghjg jhgjhg jhgjhgjhg jhgjgjh jhgjhgfghfhf hgfhgfhg jhgfjhgjhg hgfhf jhgjhghj jhgjhgjh jhgjhgjhg jhgjhgjh jhgjgjhgjh jhgjhgjhg jhgfjjjg jhgjgjhgjhg jhgjhgjhg jhgjhgjh jhgjhghj"
+  }
 
   render = () => (
     <View>
       <Text>Sample text content</Text>
+      <TextInput
+        placeholder="Sample text input placeholder"
+        editable={false}
+        multiline={true}
+        value={this.state.TextInput_3}
+        onChangeText={nextValue => this.setState({ TextInput_3: nextValue })}
+      />
     </View>
   )
 }
@@ -37,6 +47,10 @@ const styles = StyleSheet.create({
     flex: 1,
     marginHorizontal: 16
   },
+
   View_1: {},
-  Text_2: {}
+  Text_2: {},
+  View_1: {},
+  Text_2: {},
+  TextInput_3: {}
 })
