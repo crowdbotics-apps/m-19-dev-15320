@@ -34,6 +34,7 @@ export default class Blank extends React.Component {
       <TextInput
         placeholder="Sample text input placeholder"
         editable={false}
+        multiline={true}
         style={styles.TextInput_3}
         value={this.state.TextInput_3}
         onChangeText={nextValue => this.setState({ TextInput_3: nextValue })}
@@ -55,5 +56,8 @@ const styles = StyleSheet.create({
   TextInput_3: {},
   View_1: {},
   Text_2: {},
-  TextInput_3: { height: 100, overflow: "hidden" }
+  TextInput_3: { height: 100, overflow: "hidden" },
+  View_1: {},
+  Text_2: {},
+  TextInput_3: { height: 100, overflow: "visible" }
 })
